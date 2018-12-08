@@ -18,7 +18,7 @@ def switch_op(operator, x, y):
       "-": x - y,
       "*": x * y,
       "/": x / y
-   }.get(operator, lambda: None)
+   }.get(operator, "Please select a valid operator")
 
 
 print(f"{num1} {choice} {num2} = {switch_op(choice,num1,num2)}")
