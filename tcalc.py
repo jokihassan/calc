@@ -14,10 +14,12 @@ num2 = int(input("Enter second number: "))
 
 def switch_op(operator, x, y):
    return {
-   '+': lambda: x + y,
-   '*': lambda: x - y,
-   '*': lambda: x * y,
-   '/': lambda: x / y
-   }.get(operator, lambda: None)()
+      "+": x + y,
+      "-": x - y,
+      "*": x * y,
+      "/": x / y
+   }.get(operator, lambda: None)
 
-print(f"{num1} {choice} {num2} = {switch_op(choice,num1,num2) }")
+
+print(f"{num1} {choice} {num2} = {switch_op(choice,num1,num2)}")
+
